@@ -1,9 +1,194 @@
-<h1>{{book.title}}</h1>
-<p><strong>Autor(es):</strong> {{book.author}}</p>
-<p><strong>Preço:</strong> {{book.price}}</p>
-<p><strong>Descrição:</strong> {{book.description}}</p>
-<p><strong>Editora:</strong> {{book.publisher}}</p>
-<p><strong>Data de Publicação:</strong> {{book.publishedDate}}</p>
-<p><strong>Número de Páginas:</strong> {{book.pageCount}}</p>
-<p><strong>Categorias:</strong> {{book.categories}}</p>
-<p><strong>Avaliação Média:</strong> {{book.averageRating}}</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratégia Google Ads - Sagian Juazeiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #fce7f3, #e9d5ff);
+        }
+        .brand-gradient-text {
+            background: -webkit-linear-gradient(45deg, #ec4899, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="gradient-bg py-8 md:py-12">
+        <div class="container mx-auto px-6 text-center">
+            <!-- Logo. Use a URL da imagem do logo da Sagian aqui -->
+            <img src="https://placehold.co/120x120/f472b6/ffffff?text=S" alt="Logo Sagian" class="mx-auto mb-6 rounded-full border-4 border-white shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Plano Estratégico de Google Ads</h1>
+            <p class="text-xl md:text-2xl mt-2 brand-gradient-text font-semibold">Sagian Juazeiro | Cariri Shopping</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-16">
+
+        <!-- Seção de Objetivos -->
+        <section id="objetivos" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center"><i data-lucide="check-circle" class="mr-3 text-pink-500"></i>Nossos Objetivos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center">
+                    <i data-lucide="store" class="w-12 h-12 text-pink-500 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Aumentar Tráfego na Loja</h3>
+                    <p class="text-gray-600">Atrair mais clientes qualificados para a loja física no Cariri Shopping.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <i data-lucide="message-circle" class="w-12 h-12 text-pink-500 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Gerar Vendas via WhatsApp</h3>
+                    <p class="text-gray-600">Incentivar o contato direto para negociações e vendas pelo aplicativo.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <i data-lucide="gem" class="w-12 h-12 text-pink-500 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Fortalecer a Marca</h3>
+                    <p class="text-gray-600">Consolidar a Sagian como referência em bolsas e calçados na região do Cariri.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Público-Alvo -->
+        <section id="publico" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center"><i data-lucide="users" class="mr-3 text-purple-500"></i>Público-Alvo</h2>
+            <div class="card p-8">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <i data-lucide="map-pin" class="w-12 h-12 text-purple-500 mx-auto mb-4"></i>
+                        <h4 class="font-semibold text-lg">Geográfico</h4>
+                        <p>Juazeiro do Norte, Crato, Barbalha e cidades em um raio de 50km, com foco no Cariri Shopping.</p>
+                    </div>
+                    <div>
+                        <i data-lucide="user" class="w-12 h-12 text-purple-500 mx-auto mb-4"></i>
+                        <h4 class="font-semibold text-lg">Demográfico</h4>
+                        <p>Mulheres entre 25 e 55 anos, com interesse em moda e acessórios de couro.</p>
+                    </div>
+                    <div>
+                        <i data-lucide="heart" class="w-12 h-12 text-purple-500 mx-auto mb-4"></i>
+                        <h4 class="font-semibold text-lg">Interesses</h4>
+                        <p>Buscam por bolsas de qualidade, sapatos femininos e seguem influenciadores de moda locais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estrutura da Campanha -->
+        <section id="estrutura" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-10 flex items-center justify-center"><i data-lucide="layout-grid" class="mr-3 text-pink-500"></i>Estrutura das Campanhas</h2>
+            <div class="space-y-10">
+                <!-- Campanha 1: Performance Max -->
+                <div class="card p-8 flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-center md:text-left">
+                        <span class="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-semibold mb-3">Campanha 1</span>
+                        <h3 class="text-2xl font-bold mb-3">Performance Max para Visitas à Loja</h3>
+                        <p class="text-gray-600 mb-4">A campanha principal, que usa a inteligência do Google para encontrar clientes com alta probabilidade de visitar a loja física. Aparece no Maps, YouTube, Pesquisa, Gmail e mais.</p>
+                        <div class="flex items-center justify-center md:justify-start gap-4 text-gray-700">
+                             <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-green-500"></i>Foco em Vendas Locais</span>
+                             <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-green-500"></i>Máximo Alcance</span>
+                        </div>
+                    </div>
+                     <i data-lucide="target" class="w-24 h-24 text-pink-400 flex-shrink-0"></i>
+                </div>
+
+                <!-- Campanha 2: Pesquisa -->
+                <div class="card p-8 flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-center md:text-left">
+                        <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold mb-3">Campanha 2</span>
+                        <h3 class="text-2xl font-bold mb-3">Pesquisa de Marca e Produtos</h3>
+                        <p class="text-gray-600 mb-4">Captura clientes que já estão procurando ativamente pela Sagian ou por produtos específicos (bolsas, calçados) na região. Essencial para quem já tem intenção de compra.</p>
+                        <div class="flex items-center justify-center md:justify-start gap-4 text-gray-700">
+                             <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-green-500"></i>Alta Intenção</span>
+                             <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-green-500"></i>Controle de Palavras-Chave</span>
+                        </div>
+                    </div>
+                     <i data-lucide="search" class="w-24 h-24 text-purple-400 flex-shrink-0"></i>
+                </div>
+
+                <!-- Campanha 3: Remarketing -->
+                <div class="card p-8 flex flex-col md:flex-row items-center gap-8">
+                     <div class="text-center md:text-left">
+                        <span class="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold mb-3">Campanha 3</span>
+                        <h3 class="text-2xl font-bold mb-3">Remarketing na Rede de Display</h3>
+                        <p class="text-gray-600 mb-4">Reconecta com pessoas que já visitaram o perfil do Instagram. Mantém a marca na mente dos clientes e incentiva o retorno, exibindo anúncios visuais em sites e apps parceiros.</p>
+                         <div class="flex items-center justify-center md:justify-start gap-4 text-gray-700">
+                             <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-green-500"></i>Fidelização</span>
+                             <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-green-500"></i>Custo Baixo</span>
+                        </div>
+                    </div>
+                    <i data-lucide="image" class="w-24 h-24 text-indigo-400 flex-shrink-0"></i>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção Keywords e Orçamento -->
+        <section id="detalhes" class="mb-16">
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center"><i data-lucide="key" class="mr-3 text-pink-500"></i>Palavras-Chave</h2>
+                    <div class="card p-6">
+                        <p class="text-gray-600 mb-4">Focaremos em termos que demonstram alta intenção de compra local:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">loja sagian juazeiro</span>
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">sagian cariri shopping</span>
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">bolsa de couro juazeiro</span>
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">loja de bolsas cariri</span>
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">sapatos femininos juazeiro</span>
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">sandálias cariri shopping</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center"><i data-lucide="dollar-sign" class="mr-3 text-purple-500"></i>Orçamento e Métricas</h2>
+                    <div class="card p-6">
+                        <h4 class="font-semibold text-lg mb-2">Orçamento Sugerido</h4>
+                        <p class="text-gray-600 mb-4">Início com <strong>R$20 a R$50 por dia</strong>, com 60% do valor focado na campanha Performance Max para maximizar as visitas à loja.</p>
+                        
+                        <h4 class="font-semibold text-lg mb-2">Métricas de Sucesso</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Estimativa de Visitas à Loja</li>
+                            <li>Cliques no botão "Rotas" no mapa</li>
+                            <li>Cliques para ligação telefônica</li>
+                            <li>Taxa de Cliques (CTR)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-bold text-lg">Próximos Passos</p>
+            <p class="text-gray-400 mt-2">Vamos implementar essa estratégia para conectar a Sagian a milhares de novos clientes na região do Cariri.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
